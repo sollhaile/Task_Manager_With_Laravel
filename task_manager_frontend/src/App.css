@@ -1,0 +1,151 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: rgb(245, 185, 185);
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background: #c02727;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.content {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.checkbox label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+
+.checkbox input {
+  width: auto;
+  margin-right: 8px;
+}
+
+button {
+  background-color: #007bff;
+  color: rgb(8, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #093052;
+  cursor: not-allowed;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #4d4c4c;
+  border-radius: 4px;
+  background: rgb(88, 85, 236);
+}
+
+.task-item.completed {
+  background-color: #030608;
+  opacity: 0.7;
+}
+
+.task-item.completed h3 {
+  text-decoration: line-through;
+}
+
+.task-content {
+  flex: 1;
+  text-align: left;
+}
+
+.task-content h3 {
+  margin: 0 0 5px 0;
+}
+
+.task-content p {
+  margin: 0 0 5px 0;
+  color: #fdfcfc;
+}
+
+.status {
+  font-size: 0.8em;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: #050607;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.loading {
+  padding: 20px;
+  font-style: italic;
+}
+
+.error {
+  color: #dc3545;
+  padding: 10px;
+  background: #520309;
+  border-radius: 4px;
+  margin: 10px 0;
+}
